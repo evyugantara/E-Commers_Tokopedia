@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokopedia Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            color: #03ac0e;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar {
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .trending-container, .search-results {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .trending, .search-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .trending-item, .search-item {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 180px;
+        }
+        .trending-item img, .search-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 10px;
+            border-radius: 10px;
+        }
+        .trending-item p, .search-item p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .search-item .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">tokopedia</div>
+        <input type="text" class="search-bar" placeholder="Cari di Tokopedia">
+        <div class="buttons">
+            <button>Select</button>
+        </div>
+    </div>
+    <div class="trending-container">
+        <h2>Lagi trending, nih</h2>
+        <div class="trending">
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/6d/13/c6/6d13c64e9ad674c5ba5aabebe56e02f5.jpg   " alt="Filter Air">
+                <p>Filter Air</p>
+                <p>299 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/87/40/72/8740720356b550fb89445fbbd3cdd83c.jpg" alt="RX 6700 Xt">
+                <p>Snickers Pria/Wanita</p>
+                <p>11 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/19/19/15/191915c8aab1dcf71bb41312c1ba9c53.jpg" alt="RX 6700 Xt">
+                <p>T-Shirt Pria</p>
+                <p>12 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/96/7b/c2/967bc27080839207d585b3b692b9c56f.jpg" alt="RX 6700 Xt">
+                <p>Celana Jeans Katun</p>
+                <p>44 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/7d/d0/d7/7dd0d7d8bde690639d0ab532ccfd2019.jpg" alt="RX 6700 Xt">
+                <p>Whiskas Makanan Kucing</p>
+                <p>918 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/d0/91/6d/d0916d83f8fac27348a957e0e58db938.jpg" alt="RX 6700 Xt">
+                <p>Lenopo 15.69 High performance</p>
+                <p>198 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/5b/25/33/5b2533b1c29da61b2cc9c9b6a9f06bec.jpg" alt="RX 6700 Xt">
+                <p>Iphone 11 Pro    </p>
+                <p>467 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/04/74/15/047415c598bcaf24c999a83a2ba13352.jpg" alt="RX 6700 Xt">
+                <p>Sepatu Bola Ortusighrt</p>
+                <p>300 Produk Tserdia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/c9/4a/d8/c94ad8c5032249c19d899a616d7b3e02.jpg" alt="RX 6700 Xt">
+                <p>Paket Puas KFC </p>
+                <p>3000 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/3f/69/29/3f6929f64861fba1bacb51a1c797d715.jpg" alt="RX 6700 Xt">
+                <p>Jeersey Prosionflage</p>
+                <p>300 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/34/8d/39/348d398ca31f5e76c82f88da9e6544f9.jpg" alt="RX 6700 Xt">
+                <p>Snickers Wanita Kickshot</p>
+                <p>3 Produk Tersedia</p>
+            </div>
+            <div class="trending-item">
+                <img src="https://i.pinimg.com/736x/7a/e7/b7/7ae7b737eafda819fbf5b3a748138531.jpg"Sepatu Kanky">
+                <p>Celana Pendek Wanita</p>
+                <p>50 Produk Tersedia</p>
+            </div>
+        </div>
+    </div>
+    <div class="search-results">
+        <h2>Berdasarkan pencarianmu</h2>
+        <div class="search-items">
+            <div class="search-item">
+                <img src="https://i.pinimg.com/736x/cc/90/e1/cc90e1129a0896d4dde02682b26093d1.jpg" alt="Card Wallet Nike">
+                <p>Specs Acc lS Reborn</p>
+                <p>Kota.Bandung</p>
+                <p class="price">Rp349.000</p>
+                <p>5.0 | 11 Terjual</p>
+            </div>
+            <div class="search-item">
+                <img src="https://i.pinimg.com/736x/5c/af/a9/5cafa93d140a351aff898b9420510be1.jpg" alt="Nike Zoomx">
+                <p>Sepatu Lari Nike Zoomx</p>
+                <p>Kota.Banjarmasin</p>
+                <p class="price">Rp3.499.000</p>
+                <p>4.5 | 66 Terjual</p>
+            </div>
+            <div class="search-item">
+                <img src="https://i.pinimg.com/736x/7b/45/50/7b45500fc711c4a81334bb099467769c.jpg" alt="Cabe Kering">
+                <p>Guitar Squier Debut Telecaster</p>
+                <p>Kota.Cianjur</p>
+                <p class="price">Rp3.111.000</p>
+                <p>4.8 | 78 Terjual</p>
+            </div>
+            <div class="search-item">
+                <img src="https://i.pinimg.com/736x/35/42/e3/3542e3af5a0e541c3bcab152cc1da430.jpg" alt="Cabe Kering">
+                <p>Hoodie Pullover Oversize</p>
+                <p>Kota.Karawang</p>
+                <p class="price">Rp167.000</p>
+                <p>4.8 | 66 Terjual</p>
+            </div>
+            <div class="search-item">
+                <img src="https://i.pinimg.com/736x/d0/aa/04/d0aa04c30c6db960f53ebaffce71cb39.jpg" alt="Cabe Kering">
+                <p>Celanna Buggy Cargo Oversize</p>
+                <p>Kota.Bandung</p>
+                <p class="price">Rp122.000</p>
+                <p>4.9 | 766 Terjual</p>
+            </div>
+            <div class="search-item">
+                <img src="https://i.pinimg.com/736x/3b/ba/7d/3bba7d7c9d4adad34e3c24d5ae9c8d61.jpg" alt="Cabe Kering">
+                <p>Kameja Pria </p>
+                <p>Kota.Cianjur</p>
+                <p class="price">Rp90.000</p>
+                <p>4.8 | 99 Terjual</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
